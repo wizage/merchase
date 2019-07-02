@@ -1,0 +1,11 @@
+type Item @model {
+  id: ID!
+  name: String!
+  description: String
+  price: String
+}
+
+type Cart @model {
+  id: ID!
+  items: [Item]
+}

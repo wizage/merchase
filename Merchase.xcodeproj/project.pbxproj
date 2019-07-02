@@ -3,27 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048A6B2ECE6C1133202E9EAD /* Pods_Merchase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1ACB33AE87937E79E300D1A /* Pods_Merchase.framework */; };
+		1B860CE622CBCDA90087A0BD /* CartButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B860CE522CBCDA90087A0BD /* CartButtonItem.swift */; };
 		1B9A4D8722BAD235001CBF31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A4D8622BAD235001CBF31 /* AppDelegate.swift */; };
 		1B9A4D8922BAD235001CBF31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A4D8822BAD235001CBF31 /* SceneDelegate.swift */; };
-		1B9A4D8B22BAD235001CBF31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A4D8A22BAD235001CBF31 /* ViewController.swift */; };
 		1B9A4D8E22BAD235001CBF31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A4D8C22BAD235001CBF31 /* Main.storyboard */; };
 		1B9A4D9022BAD237001CBF31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A4D8F22BAD237001CBF31 /* Assets.xcassets */; };
 		1B9A4D9322BAD237001CBF31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A4D9122BAD237001CBF31 /* LaunchScreen.storyboard */; };
+		1B9A4D9C22BAE769001CBF31 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A4D9A22BAE768001CBF31 /* API.swift */; };
+		1B9A4D9D22BAE769001CBF31 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A4D9B22BAE768001CBF31 /* awsconfiguration.json */; };
+		1B9A4D9F22BAF1D3001CBF31 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A4D9E22BAF1D3001CBF31 /* MainCollectionViewController.swift */; };
+		1B9A4DA122BBF0E7001CBF31 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A4DA022BBF0E7001CBF31 /* ProductCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B860CE522CBCDA90087A0BD /* CartButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButtonItem.swift; sourceTree = "<group>"; };
 		1B9A4D8322BAD235001CBF31 /* Merchase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Merchase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9A4D8622BAD235001CBF31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B9A4D8822BAD235001CBF31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1B9A4D8A22BAD235001CBF31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B9A4D8D22BAD235001CBF31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B9A4D8F22BAD237001CBF31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B9A4D9222BAD237001CBF31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B9A4D9422BAD237001CBF31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B9A4D9A22BAE768001CBF31 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = SOURCE_ROOT; };
+		1B9A4D9B22BAE768001CBF31 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		1B9A4D9E22BAF1D3001CBF31 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		1B9A4DA022BBF0E7001CBF31 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		963B894D1DCE5FB37B81881C /* Pods-Merchase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merchase.release.xcconfig"; path = "Target Support Files/Pods-Merchase/Pods-Merchase.release.xcconfig"; sourceTree = "<group>"; };
+		B1411A0ACB5A0DE4F330C1F8 /* Pods-Merchase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merchase.debug.xcconfig"; path = "Target Support Files/Pods-Merchase/Pods-Merchase.debug.xcconfig"; sourceTree = "<group>"; };
+		B1ACB33AE87937E79E300D1A /* Pods_Merchase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merchase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048A6B2ECE6C1133202E9EAD /* Pods_Merchase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				1B9A4D8522BAD235001CBF31 /* Merchase */,
 				1B9A4D8422BAD235001CBF31 /* Products */,
+				38FD7B3E5C984F650F748AF4 /* Pods */,
+				64841FF113F09930B47E9290 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,36 @@
 		1B9A4D8522BAD235001CBF31 /* Merchase */ = {
 			isa = PBXGroup;
 			children = (
+				1B9A4D9A22BAE768001CBF31 /* API.swift */,
+				1B9A4D9B22BAE768001CBF31 /* awsconfiguration.json */,
 				1B9A4D8622BAD235001CBF31 /* AppDelegate.swift */,
 				1B9A4D8822BAD235001CBF31 /* SceneDelegate.swift */,
-				1B9A4D8A22BAD235001CBF31 /* ViewController.swift */,
 				1B9A4D8C22BAD235001CBF31 /* Main.storyboard */,
+				1B860CE522CBCDA90087A0BD /* CartButtonItem.swift */,
 				1B9A4D8F22BAD237001CBF31 /* Assets.xcassets */,
 				1B9A4D9122BAD237001CBF31 /* LaunchScreen.storyboard */,
 				1B9A4D9422BAD237001CBF31 /* Info.plist */,
+				1B9A4D9E22BAF1D3001CBF31 /* MainCollectionViewController.swift */,
+				1B9A4DA022BBF0E7001CBF31 /* ProductCollectionViewCell.swift */,
 			);
 			path = Merchase;
+			sourceTree = "<group>";
+		};
+		38FD7B3E5C984F650F748AF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1411A0ACB5A0DE4F330C1F8 /* Pods-Merchase.debug.xcconfig */,
+				963B894D1DCE5FB37B81881C /* Pods-Merchase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		64841FF113F09930B47E9290 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1ACB33AE87937E79E300D1A /* Pods_Merchase.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B9A4D9722BAD237001CBF31 /* Build configuration list for PBXNativeTarget "Merchase" */;
 			buildPhases = (
+				98A6A8F38B20B0290AFDAB11 /* [CP] Check Pods Manifest.lock */,
 				1B9A4D7F22BAD235001CBF31 /* Sources */,
 				1B9A4D8022BAD235001CBF31 /* Frameworks */,
 				1B9A4D8122BAD235001CBF31 /* Resources */,
+				88A630F23AF0ABB3F8E4F029 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9A4D9D22BAE769001CBF31 /* awsconfiguration.json in Resources */,
 				1B9A4D9322BAD237001CBF31 /* LaunchScreen.storyboard in Resources */,
 				1B9A4D9022BAD237001CBF31 /* Assets.xcassets in Resources */,
 				1B9A4D8E22BAD235001CBF31 /* Main.storyboard in Resources */,
@@ -133,13 +172,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		88A630F23AF0ABB3F8E4F029 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merchase/Pods-Merchase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merchase/Pods-Merchase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Merchase/Pods-Merchase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98A6A8F38B20B0290AFDAB11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Merchase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1B9A4D7F22BAD235001CBF31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B9A4D8B22BAD235001CBF31 /* ViewController.swift in Sources */,
 				1B9A4D8722BAD235001CBF31 /* AppDelegate.swift in Sources */,
+				1B9A4D9F22BAF1D3001CBF31 /* MainCollectionViewController.swift in Sources */,
+				1B9A4DA122BBF0E7001CBF31 /* ProductCollectionViewCell.swift in Sources */,
+				1B9A4D9C22BAE769001CBF31 /* API.swift in Sources */,
+				1B860CE622CBCDA90087A0BD /* CartButtonItem.swift in Sources */,
 				1B9A4D8922BAD235001CBF31 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +366,7 @@
 		};
 		1B9A4D9822BAD237001CBF31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1411A0ACB5A0DE4F330C1F8 /* Pods-Merchase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +385,7 @@
 		};
 		1B9A4D9922BAD237001CBF31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 963B894D1DCE5FB37B81881C /* Pods-Merchase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
