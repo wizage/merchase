@@ -9,6 +9,11 @@
             "UnauthRoleName": "merchase-dev-20190619143257-unauthRole",
             "StackName": "merchase-dev-20190619143257",
             "StackId": "arn:aws:cloudformation:us-west-2:533122240946:stack/merchase-dev-20190619143257/ce1a4f20-92d9-11e9-93c9-0a3c8425d484"
+        },
+        "categories": {
+            "auth": {
+                "merchase31ea8201": {}
+            }
         }
     }
 }

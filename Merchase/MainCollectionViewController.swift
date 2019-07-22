@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AWSMobileClient
 
 private let reuseIdentifier = "Item"
 
@@ -32,13 +33,33 @@ class MainCollectionViewController: UICollectionViewController, UICollectionView
     
     private var pagenation : String = ""
     private var numberOfRows = 0
-    private var cartNumber = 98
+    private var cartNumber = 0
     var dataSource: UICollectionViewDiffableDataSource<Section, ListItemsQuery.Data.ListItem.Item>! = nil
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
 
+        //Login first if not logged in.
+        AWSMobileClient.sharedInstance().initialize { (userState, error) in
+            if let userState = userState {
+                switch(userState){
+                    case .signedOut:
+                        AWSMobileClient.sharedInstance()
+                            .showSignIn(navigationController: self.navigationController!,
+                                        signInUIOptions: SignInUIOptions(
+                                            canCancel: false,
+                                            logoImage: UIImage(named: "MyCustomLogo"),
+                                            backgroundColor: UIColor.black)) { (result, err) in
+                                                //handle results and errors
+                    }
+                    default:
+                        print("logged in")
+                }
+                
+            } else if let error = error {
+                print(error.localizedDescription)
+            }
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -148,7 +169,6 @@ class MainCollectionViewController: UICollectionViewController, UICollectionView
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         //add stuff to cart
         cartNumber = cartNumber + 1
-        print("\(cartNumber)")
         cartButton.updateBadge(number: cartNumber)
     }
 

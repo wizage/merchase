@@ -8,15 +8,6 @@
 
 import UIKit
 
-extension CAShapeLayer {
-    func drawCircleAtLocation(location: CGPoint, withRadius radius: CGFloat, andColor color: UIColor, filled: Bool) {
-        fillColor = filled ? color.cgColor : UIColor.white.cgColor
-        strokeColor = color.cgColor
-        let origin = CGPoint(x: location.x - radius, y: location.y - radius)
-        path = UIBezierPath(roundedRect: CGRect(origin: origin, size: CGSize(width: radius * 2, height: radius * 2)), cornerRadius: radius ).cgPath
-    }
-}
-
 class CartButtonItem: UIBarButtonItem {
 
     private var handle: UInt8 = 0
@@ -42,11 +33,14 @@ class CartButtonItem: UIBarButtonItem {
         // Initialize Badge
         badge = CAShapeLayer()
         radius = CGFloat(7)
+        location = CGPoint(x: view.frame.width - (radius + offset.x), y: (radius + offset.y))
         
         self.offset = offset
         let length = "\(number)".count - 1
-        location = CGPoint(x: view.frame.width - (radius + offset.x), y: (radius + offset.y))
-        badge.drawCircleAtLocation(location:location, withRadius: radius, andColor: color, filled: filled)
+        let origin = CGPoint(x: location.x - radius, y: location.y - radius)
+        badge.fillColor = filled ? color.cgColor : UIColor.white.cgColor
+        badge.strokeColor = color.cgColor
+        badge.path = UIBezierPath(roundedRect: CGRect(origin: origin, size: CGSize(width: (radius * 2) + CGFloat(length)*5.25, height: radius * 2)), cornerRadius: radius ).cgPath
         badge.lineWidth = 1.2
         view.layer.addSublayer(badge)
         
@@ -55,7 +49,7 @@ class CartButtonItem: UIBarButtonItem {
         label.string = "\(number)"
         label.alignmentMode = .center
         label.fontSize = 11
-        label.frame = CGRect(origin: CGPoint(x: location.x - 4, y: offset.y), size: CGSize(width: 8, height: 16))
+        label.frame = CGRect(origin: CGPoint(x: location.x - 4, y: offset.y), size: CGSize(width: 8 + CGFloat(length*5), height: 16))
         label.foregroundColor = filled ? UIColor.white.cgColor : color.cgColor
         label.backgroundColor = UIColor.clear.cgColor
         label.contentsScale = UIScreen.main.scale

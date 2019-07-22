@@ -7,4 +7,7 @@ target 'Merchase' do
 
   # Pods for Merchase
   pod 'AWSAppSync', '~> 2.13.1'
+  pod 'AWSMobileClient', '~> 2.9.0'      # Required dependency
+  pod 'AWSAuthUI', '~> 2.9.0'            # Optional dependency required to use drop-in UI
+  pod 'AWSUserPoolsSignIn', '~> 2.9.0'   # Optional dependency required to use drop-in UI
 end
